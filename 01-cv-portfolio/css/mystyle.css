@@ -1,0 +1,54 @@
+.info .right-area {
+    padding-top: 8px;
+}
+
+.my-reverse {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.intro .social-icons {
+    padding-top: 10px;
+}
+
+.intro .social-icons > li > a {
+    font-size: 39px;
+    height: 65px;
+    line-height: 65px;
+    width: 65px;
+    border-radius: 35px;
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.info.info-email {
+        float: right;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+	
+	.info.info-email .my-reverse {
+        float: left;
+    }
+
+    .intro .social-icons > li > a {
+        font-size: 25px;
+        height: 45px;
+        line-height: 45px;
+        width: 45px;
+        border-radius: 35px;
+    }
+
+}
+
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+	
+	.info.info-email .my-reverse {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+}
+
