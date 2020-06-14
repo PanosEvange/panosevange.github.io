@@ -114,6 +114,11 @@
 
 .portfolio-section .myPortfolioFilter a.current{  color: #FFA804; }
 
+.portfolioContainer {
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+
 @media only screen and (min-width: 992px) {
 	
 	.info.info-email {
