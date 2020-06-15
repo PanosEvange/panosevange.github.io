@@ -1,6 +1,9 @@
 var owl = $('.owl-carousel').owlCarousel({
     loop:false,
+    rewind:true,
     nav:true,
+    navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
+    dots:true,
     responsive:{
         0:{
             items:1
