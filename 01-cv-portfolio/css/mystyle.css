@@ -293,6 +293,26 @@
     }
 }
 
+.quoto-section{ padding: 80px 0; position: relative; background-size: cover; 
+	z-index: 1; background-image: url(../../images/slider-4-1920x600.jpg); color: #fff; }
+
+.quoto-section:before{ content:''; z-index: -1; position: absolute; top: 0; bottom: 0; left: 0; 
+	right: 0; background: rgba(0,0,0, .8); }
+	
+.quoto-section .icon{ margin-bottom: 20px; height: 40px; width: 40px; line-height: 40px; 
+    border-radius: 30px; background: #FFAB00; color: #fff; }
+    
+.center-text{ text-align: center; }
+
+.experience-section-volunteer{ background: #FAF5FC; }
+
+.experience-volunteer .list > li{ display: block; position: relative; margin-bottom: 10px; }
+
+.experience-volunteer .list > li > span{ position: relative; padding-left: 20px; }
+
+.experience-volunteer .list > li span:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
+	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #555; }
+
 
     
 
