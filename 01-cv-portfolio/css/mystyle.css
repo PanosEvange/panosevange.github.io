@@ -20,12 +20,48 @@
 }
 
 #project-container {
-    width: 350px;
+    width: 320px;
     padding: 20px;
     border-radius: 5px;
     background: #fffffb;
     position: relative;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-height: 576px) { 
+    #project-container {
+        height: 360px;
+    }
+}
+
+@media (min-width: 576px) { 
+    #project-container {
+        width: 480px;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    #project-container {
+        width: 500px;
+        margin-left: 100px;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    #project-container {
+        width: 500px;
+        margin-left: 200px;
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    #project-container {
+        width: 500px;
+        margin-left: 0;
+    }
 }
 
 #project-container h1 {
@@ -113,11 +149,6 @@
 .portfolio-section .myPortfolioFilter a{ margin: 10px 10px 0 0; }
 
 .portfolio-section .myPortfolioFilter a.current{  color: #FFA804; }
-
-.portfolioContainer {
-    margin-left: 10% !important;
-    margin-right: 10% !important;
-}
 
 @media only screen and (min-width: 992px) {
 	

@@ -1,16 +1,12 @@
 var owl = $('.owl-carousel').owlCarousel({
     loop:false,
-    margin:30,
     nav:true,
     responsive:{
         0:{
             items:1
         },
-        1000:{
+        1200:{
             items:2
-        },
-        1500:{
-            items:3
         }
     }
 })
