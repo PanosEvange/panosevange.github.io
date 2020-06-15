@@ -253,3 +253,46 @@
 .intro .information .myaddress{
     padding-bottom: 2px;
 }
+
+.skills-section .expert{
+    margin-top: 10px; 
+    display: inline-block; 
+    padding: 1px 25px 0; 
+    border-radius: 5px; 
+    background: #FFAB00; 
+    color: #fff; 
+}
+
+.skills-section .familiar{
+    margin-top: 10px; 
+    display: inline-block; 
+    padding: 1px 25px 0; 
+    border-radius: 5px; 
+    background: #fbbc3dba; 
+    color: #fff; 
+}
+
+.skills-section .familiar{
+    margin-top: 10px; 
+    display: inline-block; 
+    padding: 1px 25px 0; 
+    border-radius: 5px; 
+    background: #fbbc3dba; 
+    color: #fff; 
+}
+
+@media (min-width: 768px) { 
+    .row.other-skills {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .my-skills-section {
+        margin-top: 50px;
+    }
+}
+
+
+    
+

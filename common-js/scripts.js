@@ -110,7 +110,37 @@ function enableLineProgress(){
 			from: {color: '#FFEA82'},
 			to: {color: '#ED6A5A'},
 			step: (state, bar) => {
-				bar.setText(Math.round(bar.value() * 100) + ' %');
+				// bar.setText(Math.round(bar.value() * 100) + ' %');
+			}
+		});
+		
+		$(this).waypoint(function(){
+		   bar.animate(progPercent);  
+		},{offset: "90%"})
+		
+	});
+
+	$(".line-progress-familiar").each(function(){
+		var $this = $(this),
+			progPercent = $this.data('prog-percent');
+			
+		var bar = new ProgressBar.Line(this, {
+			strokeWidth: 1,
+			easing: 'easeInOut',
+			duration: 1400,
+			color: '#fbbc3dba',
+			trailColor: '#eee',
+			trailWidth: 1,
+			svgStyle: {width: '100%', height: '100%'},
+			text: {
+				style: {
+					
+				},
+			},
+			from: {color: '#FFEA82'},
+			to: {color: '#fbbc3dba'},
+			step: (state, bar) => {
+				// bar.setText(Math.round(bar.value() * 100) + ' %');
 			}
 		});
 		
@@ -120,6 +150,8 @@ function enableLineProgress(){
 		
 	});
 }
+
+
 
 function enableCounterUp(a){
 	
