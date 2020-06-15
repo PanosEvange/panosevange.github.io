@@ -183,3 +183,10 @@
 
 }
 
+.about-section .whoami{
+    text-align: justify;
+}
+
+.about-section .whoami .myparagraph{
+    text-indent: 15px;
+}
