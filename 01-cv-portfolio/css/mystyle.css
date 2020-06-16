@@ -20,8 +20,9 @@
 }
 
 #project-container {
-    width: 320px;
+    width: 300px;
     padding: 20px;
+    height: 560px;
     border-radius: 5px;
     background: #fffffb;
     position: relative;
@@ -31,36 +32,42 @@
 @media (max-height: 576px) { 
     #project-container {
         height: 360px;
+        /* width: 70vw; */
     }
-}
 
-@media (min-width: 576px) { 
-    #project-container {
-        width: 480px;
+    #project-container h1 {
+        font-size: 20px;
     }
-}
 
-
-@media (min-width: 768px) { 
-    #project-container {
-        width: 500px;
-        margin-left: 100px;
+    #project-container .description {
+        font-size: 13px;
     }
-}
 
-
-@media (min-width: 992px) { 
-    #project-container {
-        width: 500px;
-        margin-left: 200px;
+    #project-container .technologies {
+        font-size: 12px !important;
     }
-}
 
+    #project-container button {
+        width: 50% !important;
+        height: 30px !important;
+        font-size: 12px !important;
+        margin: 28px 10% 30px 10% !important;
+    }
 
-@media (min-width: 1200px) { 
-    #project-container {
-        width: 500px;
-        margin-left: 0;
+    #project-container .technologies p {
+        width: 30% !important;
+    }
+
+    .owl-carousel .next-slide {
+        right: -9px !important;
+    }
+    
+    .owl-carousel .nav-btn {
+        top: 250px !important;
+    }
+    
+    .owl-carousel .prev-slide {
+        left: -10px !important;
     }
 }
 
@@ -313,6 +320,138 @@
 .experience-volunteer .list > li span:before{ content: ''; position: absolute; top: 50%; left: 0; height: 10px; 
 	width: 10px; margin-top: -5px; display: block; border-radius: 10px; border: 2px solid #555; }
 
+.project-container ul.description-list li{
+    display: list-item;
+    list-style-type: circle;
+}
 
+@media only screen and (max-width: 575px) and (min-height: 576px){
+	
+	.owl-carousel .next-slide {
+        right: -9px;
+    }
     
+    .owl-carousel .nav-btn {
+        top: 250px !important;
+    }
+    
+    .owl-carousel .prev-slide {
+        left: -10px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) and (max-height: 576px) { 
+    #project-container {
+        height: 360px;
+        width: 85vw;
+    }
+}
+
+@media only screen and (max-height: 576px) { 
+    
+    .owl-carousel .nav-btn {
+        top: 140px !important;
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 765px) and (max-height: 576px) { 
+    #project-container {
+        width: 63vw;
+    }
+}
+
+@media only screen and (max-width: 575px) and (min-height: 576px) { 
+    #project-container {
+        height: 560px;
+        width: 85vw;
+    }
+
+    #project-container h1 {
+        font-size: 18px;
+    }
+
+    #project-container .description {
+        font-size: 15px;
+    }
+
+    #project-container .technologies {
+        font-size: 14px !important;
+    }
+
+    #project-container button {
+        width: 80% !important;
+        height: 50px !important;
+        font-size: 16px !important;
+        margin: 28px 10% 30px 10% !important;
+    }
+
+    #project-container .technologies p {
+        width: 30% !important;
+    }
+    
+}
+
+@media (min-width: 576px) and (min-height: 576px){ 
+    #project-container {
+        height: 560px;
+        width: 64vw;
+    }
+
+    #project-container h1 {
+        font-size: 18px;
+    }
+
+    #project-container .description {
+        font-size: 15px;
+    }
+
+    #project-container .technologies {
+        font-size: 14px !important;
+    }
+
+    #project-container button {
+        width: 80% !important;
+        height: 50px !important;
+        font-size: 16px !important;
+        margin: 28px 10% 30px 10% !important;
+    }
+
+    #project-container .technologies p {
+        width: 30% !important;
+    }
+
+    .owl-carousel .nav-btn {
+        top: 250px !important;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    #project-container {
+        width: 500px;
+        margin-left: 100px;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    #project-container {
+        width: 500px;
+        margin-left: 200px;
+    }
+}
+
+
+@media (min-width: 1200px) { 
+    #project-container {
+        width: 500px;
+        margin-left: 0;
+    }
+}
+
+#project-container .ion-social-github:before {
+    margin-right: 10px;
+}
 
