@@ -1,35 +1,718 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+	<title>Panagiotis Evangeliou</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	
+	<link href="common-css/ionicons.css" rel="stylesheet">
+	
+	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="01-cv-portfolio/css/styles.css" rel="stylesheet">
+	
+	<link href="01-cv-portfolio/css/responsive.css" rel="stylesheet">
 
-.bg {
-  /* The image used */
-  background-image: url("images/underConstruction.jpg");
+	<link href="01-cv-portfolio/css/mystyle.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="common-css/owl.carousel.min.css">
 
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
-<script>
-window.onload = function() {
-    window.location.replace("http://cgi.di.uoa.gr/~sdi1500039/");
-}
-</script>
+	<link rel="stylesheet" href="common-css/owl.theme.default.min.css">
+	
 </head>
 <body>
+	
+	<header>
+		<div class="container">			
+			<a class="downlad-btn" href="./PanagiotisEvangeliou_CV.pdf" target="_blank">
+				<i class="ion-document"></i>Download CV</a>
+		</div><!-- container -->
+	</header>
+	
+	<section class="intro-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1 col-lg-2"></div>
+				<div class="col-md-10 col-lg-8">
+					<div class="intro">
+						<div class="profile-img"><img src="images/profile.jpg" alt=""></div>
+						<h2><b>Panagiotis Evangeliou</b></h2>
+						<h4 class="font-yellow">Computer Science Student</h4>
+						<ul class="information margin-tb-30">
+							<li><b>EMAIL : </b> <span class="my-reverse">moc.oohay@egnave_nap</span> </li>
+							<li><b><i class="icon ion-ios-location-outline"></i></b> <span class="myaddress">Athens, Greece</span></li>
+						</ul>
+						<ul class="social-icons">
+							<li><a href="https://www.linkedin.com/in/panagiotisevangeliou/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+							<li><a href="https://github.com/PanosEvange/" target="_blank"><i class="ion-social-github"></i></a></li>
+							<li><a href="https://www.di.uoa.gr/en" target="_blank"><i class="ion-university"></i></a></li>
+						</ul>
+					</div><!-- intro -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- intro-section -->
+	
+	<section class="portfolio-section section">
 
-<div class="bg"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Portfolio</b></h3>
+						<h6 class="font-lite-black"><b>MY WORK</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<!--filters-->
+					<nav id="project-terms" class="owl-filter-bar myPortfolioFilter margin-b-80">
+						<a href="javascript:void(0)" class="current item" data-owl-filter="*" ><b>ALL</b></a>
+						<a href="javascript:void(0)" class="item" data-owl-filter=".web" ><b>WEB</b></a>
+						<a href="javascript:void(0)" class="item" data-owl-filter=".data-science" ><b>DATA SCIENCE</b></a>
+						<a href="javascript:void(0)" class="item" data-owl-filter=".compilers" ><b>COMPILERS</b></a>
+						<a href="javascript:void(0)" class="item" data-owl-filter=".low-level" ><b>LOW LEVEL</b></a>
+						<a href="javascript:void(0)" class="item" data-owl-filter=".databases" ><b>DATABASES</b></a>
+					</nav><!-- myPortfolioFilter -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+		
 
+		<div class="portfolioContainer container">
+			<div class="owl-carousel owl-theme">
+
+				<div class="p-item item data-science">
+					<div id="project-container">
+						<h1>
+							Twitter Sentiment Analysis
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Course Project of Data Mining Course.</li>
+							<li>Implemented in Python using libraries like Pandas and Scikit-learn. </li>
+							<li>Performed the classification using 2 different classifiers: Support
+								 Vector Machines (SVM) and K-Nearest Neighbors (KNN). </li>
+							<li>Performed the vectorization using 3 different techniques: Bag-of-Words (BOW),
+								 Term Frequency — Inverse Document Frequency (TF-IDF) and Word Embeddings.</li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>Python</p>
+						<p>Pandas</p>
+						<p>Sklearn</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/Twitter-Sentiment-Analysis','_blank');"
+						 type="button">
+						<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item compilers">
+					<div id="project-container">
+						<h1>
+							MiniJava Compiler
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Course Project of Compilers Course.</li>
+							<li>Implemented in Java using tools like JavaCC and JTB.</li>
+							<li> Also used the visitor design pattern for Static Checking (Semantic Analysis)
+								 as well as for Generating Intermediate Code used by the LLVM compiler project.</li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>Java</p>
+						<p>JavaCC</p>
+						<p>JTB</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/MiniJava-Compiler','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item data-science">
+					<div id="project-container">
+						<h1>
+							Data Analysis and Clustering
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Course project for the Data Mining course of the Departement
+								 of Informatics of the National and Kapodistrian University.</li>
+							<li>In this project the task was to perform data analysis as well as
+								 clustering with the use of k means for the crime data of the city of Boston. </li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>Python</p>
+						<p>Pandas</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/Data-Analysis-and-Clustering','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item web">
+					<div id="project-container">
+						<h1>
+							Human Computer Interaction Course Project
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Redesign a part of a website so as to make it more user-friendly.</li>
+							<li>Course project of Human Computer Interaction Course. </li>
+							<li>Full stack web development with PHP, HTML, CSS (Bootstrap) and JavaScript. </li>
+							<li>Redesign a part of <a href="https://eudoxus.gr/" target="_blank">Eudoxus site</a>,
+								 which is used by students to get their university books,
+								  so as to make it more more user-friendly. </li>
+							<li>It is given emphasis on UI rather than backend. </li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>PHP</p>
+						<p>HTML</p>
+						<p>CSS (Bootstrap)</p>
+						<p>JavaScript</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/Human-Computer-Interaction-Course-Project','_blank');" 
+						type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item low-level">
+					<div id="project-container">
+						<h1>
+							Parallel Matrix Convolution
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Parallel Matrix Convolution in C using MPI and openMP</li>
+							<li>Course Project of Parallel Systems Course. </li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>C</p>
+						<p>MPI</p>
+						<p>openMP</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/Parallel-Matrix-Convolution','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item low-level">
+					<div id="project-container">
+						<h1>
+							Mini search engine implementation
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Course Project of System Programming Course.</li>
+							<li>Implemented in C++ creating Data Structures like Trie
+								 and Posting Lists for representation of Inverted Index. </li>
+							<li> Also used Polymorphism so as to minimize the memory
+								 usage for storing each word into Trie .</li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>C++</p>
+						<p>Data Structures</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/Mini-Search-Engine','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item low-level databases">
+					<div id="project-container">
+						<h1>
+							B+ Tree Index implementation in C
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Course Project of Database Systems Implementation Course.</li>
+							<li>Implementation of all search and insertion algorithms for B+ trees
+								 (including node splitting during insertion of data) in C. </li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>C</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/B_plus_Tree-Index','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item low-level databases">
+					<div id="project-container">
+						<h1>
+							Radix Hash Join
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>SIGMOD 2018 Programming Contest Task</li>
+							<li>Course project of Software Development for Information Systems Course.</li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>C++</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/Radix-Hash-Join','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item web">
+					<div id="project-container">
+						<h1>
+							My personal responsive site!
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Based on <a href="https://colorlib.com/wp/template/cvportfolio/" target="_blank">this</a> template.</li>
+							<li>Made many changes and added this carousel with my projects.</li>
+							<li>It is given emphasis on responsiveness.</li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JavaScript</p>
+						</div>
+						<!-- <button><i class="ion-social-github"></i>View Code on GitHub</button> -->
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+								
+			</div> <!-- owl-carousel -->
+		</div><!-- portfolioContainer -->
+		
+	</section><!-- portfolio-section -->
+	
+	
+	<section class="about-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>About me</b></h3>
+						<h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<p class="margin-b-50 whoami">
+						<span class="myparagraph"> 	
+								I am currently pursuing a degree in Informatics and Telecommunications
+							 	with specialization in Computer Science.
+								During these 5 years I have gained a comprehensive knowledge 
+								on all fields of Computer Science and especially in Software Engineering.
+						</span>
+						<br/><br/>
+						<span class="myparagraph">	
+								Travelling is my biggest love, along with Computer Science,
+								so meeting new cultures and people, 
+								and learning new languages is the best for me.
+								I am an open minded person and I feel citizen of the world.
+						</span>
+						<br/><br/>
+						<span class="myparagraph"> 
+								The combination of my solid background in Software Engineering and
+								of my fast adaptability makes me the suitable employee as I can learn
+								any new technology quickly and be productive from early time. 
+						</span>
+						
+					</p>
+					
+					
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- about-section -->
+	
+	<section class="skills-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="heading">
+						<h3><b>Technical Skills</b></h3>
+						<h6 class="font-lite-black"><b>I'M GOOD AT</b></h6>
+					</div>
+				</div><!-- col-sm-12 -->
+			
+				<div class="col-sm-12 col-md-6">
+					<h4><b>LANGUAGES</b></h4>
+					<h6 class="expert">GOOD</h6>
+					
+					<p class="margin-b-30 margin-t-10">I have used these languages for university course projects or in my work.</p>
+						
+					<div class="line-progress" data-prog-percent=".70"><div></div>
+						<p class="progress-title"><b>Java</b></p></div>
+					
+					<div class="line-progress" data-prog-percent=".70"><div></div>
+						<p class="progress-title"><b>C</b></p></div>
+
+					<div class="line-progress" data-prog-percent=".70"><div></div>
+						<p class="progress-title"><b>C++</b></p></div>
+
+					<div class="line-progress" data-prog-percent=".70"><div></div>
+						<p class="progress-title"><b>Python</b></p></div>
+
+				</div><!-- col-md-6 -->
+				
+				<div class="col-sm-12 col-md-6 my-skills-section">
+					<h4><b>LANGUAGES AND TECHNOLOGIES</b></h4>
+					<h6 class="familiar">FAMILIAR</h6>
+					
+					<p class="margin-b-30 margin-t-10">I have used these languages for university course projects or in my work but to a 
+						lesser extent.</p>
+						
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>JavaScript</b></p></div>
+					
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>MySQL</b></p></div>
+
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>HTML & CSS</b></p></div>
+
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>PHP</b></p></div>
+
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>Elasticsearch</b></p></div>
+					
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>Spring Framework</b></p></div>
+
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>JSP</b></p></div>
+
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>MPI</b></p></div>
+
+					<div class="line-progress-familiar" data-prog-percent=".40"><div></div>
+						<p class="progress-title"><b>Bash script</b></p></div>
+
+				</div><!-- col-md-6 -->
+
+			</div><!-- row -->
+			<div class="row other-skills">
+			
+				<div class="col-sm-12 col-md-6 my-skills-section">
+					<h4><b>OPERATING SYSTEMS & SOFTWARE</b></h4>
+					
+					<p class="margin-b-30 margin-t-10">I develop on these OSes and I have used these softwares.</p>
+						
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>Linux</b></p></div>
+					
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>Windows</b></p></div>
+
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>Git/Github</b></p></div>
+
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>GitLab</b></p></div>
+
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>Oracle SQL Developer</b></p></div>
+
+				</div><!-- col-md-6 -->
+				
+				<div class="col-sm-12 col-md-6 my-skills-section">
+					<h4><b>OTHER</b></h4>
+					
+					<p class="margin-b-30 margin-t-10">General programs that I have used.</p>
+						
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>LaTeX</b></p></div>
+					
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>Word</b></p></div>
+
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>Excel</b></p></div>
+
+					<div class="line-progress" data-prog-percent="1.00"><div></div>
+						<p class="progress-title"><b>PowerPoint</b></p></div>
+
+				</div><!-- col-md-6 -->
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- skills-section -->
+	
+	<section class="experience-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Work Experience</b></h3>
+						<h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+				
+					<div class="experience margin-b-50">
+						<h4><b>IT Support Engineer</b></h4>
+						<h5 class="font-yellow"><b>Hellenic Army Academy (Evelpidon)</b>
+							 <img class="haa-logo" src="images/logo_name_sse_en.png" 
+							 onclick="window.open('https://sse.army.gr/en','_blank');"></h5>
+						<h5 class="font-yellow"><b>Military Service: Research - Informatics Corps</b></h5>
+						<h6 class="margin-t-10">November 2019 - June 2020</h6>
+						<p class="font-semi-white margin-tb-30">During my mandatory military service period I
+							served at the Research - Informatics Corps and I worked as IT Support Engineer at 
+							the Research and Informatics Department of the Hellenic Army Academy.	 
+						</p>
+						<ul class="list margin-b-30">
+							<li>Support and maintenance of Academy's computers at hardware and software level
+								(it is worth mentioning that the Hellenic Army Academy has the second largest
+								network within the Greek Army, which consists of 2 MAN networks with over 1200
+								users and 2000 machines).</li>
+							<li>Development and support of the Academy's new webpage (www.sse.army.gr), using
+								Drupal CMS.</li>
+							<li>Installation and maintenance of wired and wireless networks of the Academy's campus
+								(UTP/STP cabling, optical fibers, Cisco Aironet/Ubiquiti Unifi wireless couplings).</li>
+							<li>Administration and support of network security and communications systems (pfSense
+								Firewall, Zimbra Mail Server, IPSwitch Whatsup GOLD NMS, Moodle Learning Platform).</li>
+							<li>Technical support for conferences and events.</li>
+							<li>Creation of User Manuals.</li>
+							<li><a class="my-recommendation-letter" href="./PanagiotisEvangeliou_haa_recommendation.pdf" target="_blank">
+								<i class="ion-document"></i>Check my recommendation letter.</a></li>
+						</ul>
+					</div><!-- experience -->
+					
+					<div class="experience margin-b-50 ">
+						<h4><b>Junior Developer / Consultant</b></h4>
+						<h5 class="font-yellow"><b>Cognity S.A.</b>
+							<img class="cognity-logo" src="images/cognity_logo.png" 
+							onclick="window.open('http://www.cognity.gr/','_blank');">
+						</h5>
+						<h6 class="margin-t-10">July 2018 - January 2019</h6>
+						<p class="font-semi-white margin-tb-30">The projects I worked on:
+							<ul class="list margin-b-30">
+								<li>Creating responsive version of existing eCommerce website developed using Oracle
+									eCommerce ATG platform.</li>
+								<li>Using Elasticsearch for optimizing product search engine and creating back office tool
+									for existing eCommerce website developed using Oracle eCommerce ATG platform.</li>
+								
+							</ul>
+						</p>
+						<p class="font-semi-white margin-tb-30">Technologies I used:
+							<ul class="list margin-b-30">
+								<li><b>Java</b>, <b>Oracle ATG</b>, Html, CSS, JavaScript, JSP, Git, Bash Script, SQL, SQL
+									Developer, <b>Elasticsearch</b></li>
+							</ul>
+						</p>
+						<p class="font-semi-white margin-tb-30">My role:
+							<ul class="list margin-b-30">
+								<li>Testing / Fixing Bugs in either HTML/CSS or Java during UAT phase.</li>
+								<li>Customer support for either existing desktop site or responsive site during UAT phase.</li>
+								<li>Creating whole pages (both front-end and back-end) for back office tool like Profile
+									Search, Order Details, Product Search etc.</li>
+								<li>Developing in Java using Elasticsearch.</li>
+							</ul>
+						</p>
+						<p class="font-semi-white margin-tb-30">
+							<ul class="list margin-b-30">
+								<li><a class="my-recommendation-letter" href="./PanagiotisEvangeliou_cognity_recommendation.pdf" target="_blank">
+									<i class="ion-document"></i>Check my recommendation letter.</a></li>
+							</ul>
+						</p>
+					</div><!-- experience -->
+					
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- experience-section -->
+	
+	<section class="education-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Education</b></h3>
+						<h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>Bachelor in Computer Science</b></h4>
+							<h5 class="font-yellow"><b>National and Kapodistrian University of Athens</b></h5>
+							<h6 class="font-lite-black margin-t-10">Department of Informatics and Telecommunications</h6>
+							<p class="margin-tb-10">Specializations:
+								<ul class="specialization-list">
+									<li>Software</li>
+									<li>Data and Knowledge Management</li>
+								</ul>
+							</p>
+							<p class="margin-tb-10">Current GPA: 8.37/10</p>
+						</div><!-- education -->
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+		
+	</section><!-- about-section -->
+	
+	<section class="quoto-section center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<i class="icon ion-quote"></i>
+					<h3 class="font-yellow"><b>	"I am </b></h3>
+					<h3><b>not an Athenian or a Greek, but <span class="font-yellow">a citizen of the world.</span> </br>
+						-Socrates</b></h3>
+				</div><!-- col-sm-12 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- quoto-section -->
+	
+	<section class="experience-section-volunteer section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>VOLUNTEERING</b></h3>
+						<h6 class="font-lite-black"><b>PROJECTS I HAVE TAKEN PART IN</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				
+				<div class="col-sm-8">
+					<div class="experience-volunteer margin-b-50">
+						<h4><b>Youth Exchange Participant - Erasmus+</b></h4>
+						<h5 class="font-yellow"><b>Youthfully Yours GR</b></h5>
+						<h6 class="font-lite-black margin-t-10">July 2019, Murzasichle, Poland</h6>
+						<p class="margin-tb-10">I took part in a Youth Exchange Erasmus+ project
+							 with 37 young people from Bulgaria, Greece, Hungary, Lithuania, Poland, Romania and Slovak Republic. </p>
+						<p class="margin-tb-10"> Project Title: <span class="blackText">Youth Beyond Limits</span></p>
+						<p class="margin-tb-10"> Subject: <span class="blackText">Youth Unemployment and Entrepreneurship</span> </p>
+						<p class="margin-tb-10"> Content:
+							<ul class="list">
+								<li><span>The problem of high unemployment rate amoung young people living in UE.</span></li>
+								<li><span>Development of entrepreneurial and employability skills by participants of the youth exchange.</span></li>
+							</ul>
+						</p>
+						<p class="margin-tb-10">Learning Methods:
+							<ul class="list">
+								<li><span>Discussion tables, workshops, debates, role-plays, simulations,
+									 presentations, teamwork, social games, outdoor activities.</span></li>
+							</ul>
+						</p>
+						<p class="margin-tb-10"> Project Organized by: <span class="blackText">
+							<a class="my-volunteer-project-link" href="https://www.facebook.com/pages/category/Youth-Organization/Stowarzyszenie-Grupa-Dzia%C5%82ania-1415657051989658/" target="_blank">
+								Stowarzyszenie "Grupa Działania"</a>
+								</span>
+						</p>
+
+					</div><!-- experience -->
+					
+					<div class="experience-volunteer margin-b-50">
+						<h4><b>Youth Exchange Participant - Erasmus+</b></h4>
+						<h5 class="font-yellow"><b>Youth Center of Epirus</b></h5>
+						<h6 class="font-lite-black margin-t-10">February 2019, Ocna Șugatag, Romania</h6>
+						<p class="margin-tb-10">I took part in a Youth Exchange Erasmus+ project with
+							 30 young people from France, Greece, Italy, Lithuania, Romania and Spain.
+						</p>
+					   <p class="margin-tb-10"> Project Title: <span class="blackText">Like to Vote</span></p>
+					   <p class="margin-tb-10"> Subject: <span class="blackText">The May 2019 elections</span> </p>
+					   <p class="margin-tb-10"> Content:
+						   <ul class="list">
+							   <li><span>Increasing the number of young people who were informed about the importance
+								    of participating in the May 2019 elections.</span></li>
+						   </ul>
+					   </p>
+					   <p class="margin-tb-10">Learning Methods:
+						   <ul class="list">
+							   <li><span>Discussion tables, workshops, debates, role-plays,
+								    simulations, presentations, teamwork, social games, outdoor activities.</span></li>
+						   </ul>
+					   </p>
+					   <p class="margin-tb-10"> Project Organized by: <span class="blackText">
+						   <a class="my-volunteer-project-link" href="https://www.facebook.com/asociatiaszmisz" target="_blank">
+								Asociaţia Szmisz</a>
+							   </span>
+					   </p>
+					</div><!-- experience -->
+					
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- experience-section -->
+
+	<footer>
+		<p class="copyright">
+			<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ion-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		</p>
+
+
+	</footer>
+	
+	
+	<!-- SCIPTS -->
+	
+	<script src="common-js/jquery-3.2.1.min.js"></script>
+	
+	<script src="common-js/tether.min.js"></script>
+	
+	<script src="common-js/bootstrap.js"></script>
+	
+	<script src="common-js/isotope.pkgd.min.js"></script>
+	
+	<script src="common-js/jquery.waypoints.min.js"></script>
+	
+	<script src="common-js/progressbar.min.js"></script>
+	
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	
+	<script src="common-js/scripts.js"></script>
+
+	<script src="common-js/owl.carousel.js"></script>
+
+	<script src="common-js/owl.navigation.js"></script>
+
+	<script src="common-js/owlcarousel2-filter.min.js"></script>
+	
+	<script src="common-js/myscripts.js"></script>
 </body>
 </html>
