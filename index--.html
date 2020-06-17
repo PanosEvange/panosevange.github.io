@@ -77,9 +77,9 @@
 					<nav id="project-terms" class="owl-filter-bar myPortfolioFilter margin-b-80">
 						<a href="javascript:void(0)" class="current item" data-owl-filter="*" ><b>ALL</b></a>
 						<a href="javascript:void(0)" class="item" data-owl-filter=".web" ><b>WEB</b></a>
-						<a href="javascript:void(0)" class="item" data-owl-filter=".low-level" ><b>LOW LEVEL</b></a>
-						<a href="javascript:void(0)" class="item" data-owl-filter=".compilers" ><b>COMPILERS</b></a>
 						<a href="javascript:void(0)" class="item" data-owl-filter=".data-science" ><b>DATA SCIENCE</b></a>
+						<a href="javascript:void(0)" class="item" data-owl-filter=".compilers" ><b>COMPILERS</b></a>
+						<a href="javascript:void(0)" class="item" data-owl-filter=".low-level" ><b>LOW LEVEL</b></a>
 						<a href="javascript:void(0)" class="item" data-owl-filter=".databases" ><b>DATABASES</b></a>
 					</nav><!-- myPortfolioFilter -->
 				</div><!-- col-sm-8 -->
@@ -91,22 +91,55 @@
 		<div class="portfolioContainer container">
 			<div class="owl-carousel owl-theme">
 
-				<div class="p-item item low-level databases">
+				<div class="p-item item data-science">
 					<div id="project-container">
 						<h1>
-							B+ Tree Index implementation in C
+							Twitter Sentiment Analysis
 						</h1>
 						<div class="description">
 						<ul class="project-description-list">
-							<li>Course Project of Database Systems Implementation Course.</li>
-							<li>Implementation of all search and insertion algorithms for B+ trees
-								 (including node splitting during insertion of data) in C. </li>
+							<li>Course Project of Data Mining Course.</li>
+							<li>Implemented in Python using libraries like Pandas and Scikit-learn. </li>
+							<li>Performed the classification using 2 different classifiers: Support
+								 Vector Machines (SVM) and K-Nearest Neighbors (KNN). </li>
+							<li>Performed the vectorization using 3 different techniques: Bag-of-Words (BOW),
+								 Term Frequency — Inverse Document Frequency (TF-IDF) and Word Embeddings.</li>
 						</ul>
 						</div>
 						<div class="technologies">
-						<p>C</p>
+						<p>Python</p>
+						<p>Pandas</p>
+						<p>Sklearn</p>
 						</div>
-						<button><i class="ion-social-github"></i>View Code on GitHub</button>
+						<button onclick="window.open('https://github.com/PanosEvange/Twitter-Sentiment-Analysis','_blank');"
+						 type="button">
+						<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item compilers">
+					<div id="project-container">
+						<h1>
+							MiniJava Compiler
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Course Project of Compilers Course.</li>
+							<li>Implemented in Java using tools like JavaCC and JTB.</li>
+							<li> Also used the visitor design pattern for Static Checking (Semantic Analysis)
+								 as well as for Generating Intermediate Code used by the LLVM compiler project.</li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>Java</p>
+						<p>JavaCC</p>
+						<p>JTB</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/MiniJava-Compiler','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
 						<footer>
 						</footer>
 					</div>
@@ -129,7 +162,9 @@
 						<p>Python</p>
 						<p>Pandas</p>
 						</div>
-						<button><i class="ion-social-github"></i>View Code on GitHub</button>
+						<button onclick="window.open('https://github.com/PanosEvange/Data-Analysis-and-Clustering','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
 						<footer>
 						</footer>
 					</div>
@@ -145,7 +180,7 @@
 							<li>Redesign a part of a website so as to make it more user-friendly.</li>
 							<li>Course project of Human Computer Interaction Course. </li>
 							<li>Full stack web development with PHP, HTML, CSS (Bootstrap) and JavaScript. </li>
-							<li>Redesign a part of Eudoxus site (eudoxus.gr),
+							<li>Redesign a part of <a href="https://eudoxus.gr/" target="_blank">Eudoxus site</a>,
 								 which is used by students to get their university books,
 								  so as to make it more more user-friendly. </li>
 							<li>It is given emphasis on UI rather than backend. </li>
@@ -157,7 +192,59 @@
 						<p>CSS (Bootstrap)</p>
 						<p>JavaScript</p>
 						</div>
-						<button><i class="ion-social-github"></i>View Code on GitHub</button>
+						<button onclick="window.open('https://github.com/PanosEvange/Human-Computer-Interaction-Course-Project','_blank');" 
+						type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item low-level">
+					<div id="project-container">
+						<h1>
+							Parallel Matrix Convolution
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Parallel Matrix Convolution in C using MPI and openMP</li>
+							<li>Course Project of Parallel Systems Course. </li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>C</p>
+						<p>MPI</p>
+						<p>openMP</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/Parallel-Matrix-Convolution','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
+						<footer>
+						</footer>
+					</div>
+				</div><!-- p-item -->
+
+				<div class="p-item item low-level">
+					<div id="project-container">
+						<h1>
+							Mini search engine implementation
+						</h1>
+						<div class="description">
+						<ul class="project-description-list">
+							<li>Course Project of System Programming Course.</li>
+							<li>Implemented in C++ creating Data Structures like Trie
+								 and Posting Lists for representation of Inverted Index. </li>
+							<li> Also used Polymorphism so as to minimize the memory
+								 usage for storing each word into Trie .</li>
+						</ul>
+						</div>
+						<div class="technologies">
+						<p>C++</p>
+						<p>Data Structures</p>
+						</div>
+						<button onclick="window.open('https://github.com/PanosEvange/Mini-Search-Engine','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
 						<footer>
 						</footer>
 					</div>
@@ -178,7 +265,9 @@
 						<div class="technologies">
 						<p>C</p>
 						</div>
-						<button><i class="ion-social-github"></i>View Code on GitHub</button>
+						<button onclick="window.open('https://github.com/PanosEvange/B_plus_Tree-Index','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
 						<footer>
 						</footer>
 					</div>
@@ -187,89 +276,48 @@
 				<div class="p-item item low-level databases">
 					<div id="project-container">
 						<h1>
-							B+ Tree Index implementation in C
+							Radix Hash Join
 						</h1>
 						<div class="description">
 						<ul class="project-description-list">
-							<li>Course Project of Database Systems Implementation Course.</li>
-							<li>Implementation of all search and insertion algorithms for B+ trees
-								 (including node splitting during insertion of data) in C. </li>
+							<li>SIGMOD 2018 Programming Contest Task</li>
+							<li>Course project of Software Development for Information Systems Course.</li>
 						</ul>
 						</div>
 						<div class="technologies">
-						<p>C</p>
+						<p>C++</p>
 						</div>
-						<button><i class="ion-social-github"></i>View Code on GitHub</button>
+						<button onclick="window.open('https://github.com/PanosEvange/Radix-Hash-Join','_blank');"
+						 type="button">
+							<i class="ion-social-github"></i>View Code on GitHub</button>
 						<footer>
 						</footer>
 					</div>
 				</div><!-- p-item -->
 
-				<div class="p-item item low-level databases">
+				<div class="p-item item web">
 					<div id="project-container">
 						<h1>
-							B+ Tree Index implementation in C
+							My personal responsive site!
 						</h1>
 						<div class="description">
 						<ul class="project-description-list">
-							<li>Course Project of Database Systems Implementation Course.</li>
-							<li>Implementation of all search and insertion algorithms for B+ trees
-								 (including node splitting during insertion of data) in C. </li>
+							<li>Based on <a href="https://colorlib.com/wp/template/cvportfolio/" target="_blank">this</a> template.</li>
+							<li>Made many changes and added this carousel with my projects.</li>
+							<li>It is given emphasis on responsiveness.</li>
 						</ul>
 						</div>
 						<div class="technologies">
-						<p>C</p>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JavaScript</p>
 						</div>
-						<button><i class="ion-social-github"></i>View Code on GitHub</button>
+						<!-- <button><i class="ion-social-github"></i>View Code on GitHub</button> -->
 						<footer>
 						</footer>
 					</div>
 				</div><!-- p-item -->
-
-				<div class="p-item item low-level databases">
-					<div id="project-container">
-						<h1>
-							B+ Tree Index implementation in C
-						</h1>
-						<div class="description">
-						<ul class="project-description-list">
-							<li>Course Project of Database Systems Implementation Course.</li>
-							<li>Implementation of all search and insertion algorithms for B+ trees
-								 (including node splitting during insertion of data) in C. </li>
-						</ul>
-						</div>
-						<div class="technologies">
-						<p>C</p>
-						</div>
-						<button><i class="ion-social-github"></i>View Code on GitHub</button>
-						<footer>
-						</footer>
-					</div>
-				</div><!-- p-item -->
-
-				<div class="p-item item low-level databases">
-					<div id="project-container">
-						<h1>
-							B+ Tree Index implementation in C
-						</h1>
-						<div class="description">
-						<ul class="project-description-list">
-							<li>Course Project of Database Systems Implementation Course.</li>
-							<li>Implementation of all search and insertion algorithms for B+ trees
-								 (including node splitting during insertion of data) in C. </li>
-						</ul>
-						</div>
-						<div class="technologies">
-						<p>C</p>
-						</div>
-						<button><i class="ion-social-github"></i>View Code on GitHub</button>
-						<footer>
-						</footer>
-					</div>
-				</div><!-- p-item -->
-
-
-				
+								
 			</div> <!-- owl-carousel -->
 		</div><!-- portfolioContainer -->
 		

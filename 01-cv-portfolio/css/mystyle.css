@@ -602,3 +602,8 @@
     }
 
 }
+
+#project-container .project-description-list a {
+    text-decoration: underline;
+    color: #ff8462;
+}
