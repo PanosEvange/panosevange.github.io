@@ -607,3 +607,8 @@
     text-decoration: underline;
     color: #ff8462;
 }
+
+.downlad-btn .ion-document:before {
+    font-size: 20px;
+    margin-right: 10px;
+}
