@@ -371,16 +371,17 @@
     }
 
     #project-container h1 {
-        font-size: 18px;
+        font-size: 15px;
+        height: 30px;
     }
 
     #project-container .description {
-        font-size: 15px;
+        font-size: 13px;
         height: 280px;
     }
 
     #project-container .technologies {
-        font-size: 14px !important;
+        font-size: 12px !important;
     }
 
     #project-container button {
@@ -393,13 +394,80 @@
     #project-container .technologies p {
         width: 30% !important;
     }
-    
+
+    #project-container .technologies {
+        height: 100px;
+    }
+
+    #project-container button {
+        margin: 14px 10% 30px 10% !important;
+        height: 35px !important;
+        font-size: 15px !important;
+    }
+
+    #project-container .ion-social-github:before {
+        margin-right: 10px;
+        font-size: 15px !important;
+    }
+
 }
 
-@media (min-width: 576px) and (min-height: 576px){ 
+@media (min-width: 576px) and (max-width: 768px) and (min-height: 576px){ 
     #project-container {
         height: 560px;
         width: 64vw;
+    }
+
+    #project-container h1 {
+        font-size: 15px;
+        height: 30px;
+    }
+
+    #project-container .description {
+        font-size: 13px;
+        height: 280px;
+    }
+
+    #project-container .technologies {
+        font-size: 12px !important;
+    }
+
+    #project-container button {
+        width: 80% !important;
+        height: 50px !important;
+        font-size: 16px !important;
+        margin: 28px 10% 30px 10% !important;
+    }
+
+    #project-container .technologies p {
+        width: 30% !important;
+    }
+
+    #project-container .technologies {
+        height: 100px;
+    }
+
+    #project-container button {
+        margin: 14px 10% 30px 10% !important;
+        height: 35px !important;
+        font-size: 15px !important;
+    }
+
+    #project-container .ion-social-github:before {
+        margin-right: 10px;
+        font-size: 15px !important;
+    }
+
+    .owl-carousel .nav-btn {
+        top: 250px !important;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    #project-container {
+        width: 500px;
+        margin-left: 100px;
     }
 
     #project-container h1 {
@@ -424,18 +492,6 @@
 
     #project-container .technologies p {
         width: 30% !important;
-    }
-
-    .owl-carousel .nav-btn {
-        top: 250px !important;
-    }
-}
-
-
-@media (min-width: 768px) { 
-    #project-container {
-        width: 500px;
-        margin-left: 100px;
     }
 }
 
@@ -509,4 +565,40 @@
     #project-container .technologies {
         height: 95px;
     }
+}
+
+@media (max-height: 576px) { 
+    
+    #project-container h1 {
+        font-size: 17px !important;
+        height: 20px;
+    }
+
+    #project-container .description {
+        font-size: 12px;
+        height: 140px;
+    }
+
+    .project-description-list > li {
+        margin-bottom: 5px;
+    }
+
+    #project-container .technologies {
+        font-size: 12px !important;
+        height: 70px;
+    }
+
+    #project-container .technologies p{
+        height: 25px;
+        padding: 0px 0;
+
+    }
+
+    #project-container button {
+        width: 50% !important;
+        height: 30px !important;
+        font-size: 12px !important;
+        margin: 5px 10% 4px 10% !important;
+    }
+
 }
