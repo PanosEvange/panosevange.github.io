@@ -612,3 +612,24 @@
     font-size: 20px;
     margin-right: 10px;
 }
+
+.haa-logo{
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) { 
+    .haa-logo{
+        margin-left: 90px;
+    }
+}
+
+.my-recommendation-letter{
+    text-decoration: underline;
+}
+
+.my-recommendation-letter i.ion-document {
+    margin-right: 10px;
+}
+
