@@ -668,10 +668,6 @@
 
 .margin-tb-10{ margin-top: 10px; margin-bottom: 10px; }
 
-.experience-volunteer {
-    text-align: justify;
-}
-
 .experience-volunteer .blackText {
     color: #333;
 }
@@ -679,5 +675,3 @@
 .my-volunteer-project-link{
     text-decoration: underline;
 }
-
-/* <span class="blackText"></span> */
