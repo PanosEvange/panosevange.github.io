@@ -675,3 +675,12 @@
 .my-volunteer-project-link{
     text-decoration: underline;
 }
+
+@media (max-height: 576px) { 
+    .experience-section .work-experience-title {
+        font-size: 20px;
+    }
+    .experience-section-volunteer .volunteer-experience-title {
+        font-size: 20px;
+    }
+}
