@@ -684,3 +684,27 @@
         font-size: 20px;
     }
 }
+
+.agile-logo{
+    width: 120px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) { 
+    .agile-logo{
+        margin-left: 90px;
+        margin-top: 10px;
+    }
+}
+
+.my-link-underline{
+    text-decoration: underline;
+}
+
+.icap-logo{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-left: 10px;
+}
