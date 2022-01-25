@@ -691,9 +691,21 @@
     cursor: pointer;
 }
 
+.cern-logo{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
 @media (min-width: 1200px) { 
     .agile-logo{
         margin-left: 90px;
+        margin-top: 10px;
+    }
+
+    .cern-logo{
+        margin-left: 30px;
         margin-top: 10px;
     }
 }
