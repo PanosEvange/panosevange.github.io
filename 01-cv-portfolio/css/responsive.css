@@ -6,6 +6,16 @@
 	}
 }
 
+@media only screen and (min-width: 768px) {
+	.technologies-skills.alternative p{
+		border: solid 2px #838add;
+	}
+	.technologies-skills.alternative p:hover{
+		background: #838add;
+		color: white;
+	}
+}
+
 /* Screens Resolution : 992px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 1200px) {
@@ -24,6 +34,7 @@
 	.technologies-skills p{
 		width: 140px;
 	}
+
 }
 
 /* Screens Resolution : 992px
