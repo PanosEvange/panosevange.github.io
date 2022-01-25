@@ -12,6 +12,8 @@
 	.counter{ display: inline-block; }
 	
 	.counter .desc{ text-align: left; }
+
+	.intro .profile-img{ width: 100%; height: 205px; }
 }
 
 /* Screens Resolution : 992px
@@ -23,7 +25,8 @@
 	--------------------------------- */
 
 	.intro-section{ padding-top: 250px; }
-	
+
+	.intro .profile-img{ height: 190px; }
 }
 
 /* Screens Resolution : 767px
@@ -78,6 +81,7 @@
 	.education-wrapper:after,
 	.education-wrapper .education:after{ display: none; }
 
+	.intro .profile-img{ height: 170px; }
 }
 
 /* Screens Resolution : 575px
@@ -96,13 +100,15 @@
 	--------------------------------- */
 	
 	.portfolio-section .p-item{ width: 100%; }
-	
+
+	.intro .profile-img{ height: 150px; }
 }
 
 /* Screens Resolution : 479px
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 479px) {
 
+	.intro .profile-img{ height: 115px; }
 
 }
 
@@ -126,7 +132,6 @@
 -------------------------------------------------------------------------- */
 @media only screen and (max-width: 290px) {
 
-	
 }
 
 /* Screens Resolution : 290px
@@ -148,7 +153,7 @@
 	--------------------------------- */
 
 	.intro .profile-img{ width: 80%; height: auto; top: 0; margin-bottom: 10px; }
-	
+
 	.intro{ padding: 20px 10px 0; margin-right: -15px; margin-left: -15px; }
-	
+
 }
