@@ -749,3 +749,7 @@
 .section{
     margin-top: 10px;
 }
+
+p.no-wrap-skill {
+    width: 70%;
+}
