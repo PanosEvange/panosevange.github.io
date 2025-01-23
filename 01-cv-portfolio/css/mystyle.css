@@ -753,3 +753,9 @@
 p.no-wrap-skill {
     width: 70%;
 }
+
+.stalicla-logo{
+    width: 30%;
+    cursor: pointer;
+    margin-left: 25%;
+}
